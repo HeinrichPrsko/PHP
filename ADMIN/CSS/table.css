@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    /* ===== Colors ===== */
+    --primary-color: #0E4BF1;
+    --panel-color: #FFF;
+    --text-color: #000;
+    --black-light-color: #707070;
+    --border-color: #e6e5e5;
+    --toggle-color: #DDD;
+    --box1-color: #4DA3FF;
+    --box2-color: #FFE6AC;
+    --box3-color: #E7D1FC;
+    --title-icon-color: #fff;
+    
+    /* ====== Transition ====== */
+    --tran-05: all 0.5s ease;
+    --tran-03: all 0.3s ease;
+    --tran-03: all 0.2s ease;
+}
+body.dark{
+    --primary-color: #3A3B3C;
+    --panel-color: #242526;
+    --text-color: #CCC;
+    --black-light-color: #CCC;
+    --border-color: #4D4C4C;
+    --toggle-color: #FFF;
+    --box1-color: #3A3B3C;
+    --box2-color: #3A3B3C;
+    --box3-color: #3A3B3C;
+    --title-icon-color: #CCC;
+}
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+     width: 100%;
+     border-radius: 10px;
+     overflow: hidden;
+     box-shadow: 0 6px 6px -2px var(--box1-color)
+}
+.content-table thead tr{
+    background-color: var(--box1-color);
+    color: var(--text-color);
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.content-table th,
+.content-table td{
+    padding: 12px 15px;
+    color: var(--text-color);
+}
+.content-table tbody tr{
+    border-bottom: 1px solid var(--black-light-color);
+}
+.content-table tbody tr:nth-of-type(even){
+    background-color: var(--box3-color);
+}
+.content-table tbody tr:last-of-type{
+    border-bottom: 5px solid var(--box1-color)
+}

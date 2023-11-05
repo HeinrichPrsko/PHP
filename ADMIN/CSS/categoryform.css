@@ -1,0 +1,12 @@
+.col-md-6 {
+    margin-bottom: 20px; /* You can adjust the margin value as per your design requirements */
+  }
+  .col-md-12{
+    margin-bottom: 20px;
+  }
+  .row input{
+    background: rgb(236, 226, 226);
+  }
+  .row textarea{
+    background: rgb(236, 226, 226);
+  }
